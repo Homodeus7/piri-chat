@@ -6,11 +6,18 @@ const routes = [
     path: "/",
     name: "TheHome",
     component: TheHome,
+    meta: {
+      layout: "main",
+      auth: true,
+    },
   },
   {
-    path: "/about",
-    name: "TheAbout",
-    component: () => import("../views/TheAbout.vue"),
+    path: "/auth",
+    name: "auth",
+    component: () => import("../views/TheAuth.vue"),
+    meta: {
+      layout: "auth",
+    },
   },
 ];
 

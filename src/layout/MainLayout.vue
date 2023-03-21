@@ -1,4 +1,5 @@
 <template>
+  <TheNavbar />
   <div class="container">
     <div class="card"></div>
   </div>
@@ -7,8 +8,6 @@
 <script>
 import TheNavbar from "../components/TheNavbar.vue";
 export default {
-  components: TheNavbar,
+  components: { TheNavbar },
 };
 </script>
-
-<style lang="scss" scoped></style>
