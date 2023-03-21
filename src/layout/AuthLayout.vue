@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="card center"></div>
+    <router-view />
   </div>
 </template>
 
